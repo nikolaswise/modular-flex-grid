@@ -1,4 +1,17 @@
 // Correlated with column break points
+//
+$rem-size:           16px              !default;
+$body-size:          1rem              !default;
+$small-size:         0.85rem           !default;
+$baseline:           0.25rem           !default;
+$leading:            5*$baseline       !default;
+$indent:             1em               !default;
+
+$container-ratio:        11/12;
+$container-ratio-medium: 10/12;
+$container-ratio-large:  8/12;
+$max-width: 60rem;
+
 $gutter:    4%;
 $col-count: 12;
 
