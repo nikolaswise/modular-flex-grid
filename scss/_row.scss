@@ -9,6 +9,9 @@
 @mixin row-is-centered () {
   justify-content: center;
 }
+@mixin row-is-right () {
+  justify-content: right;
+}
 @mixin row-is-vertical () {
   flex-direction: column;
 }
@@ -25,25 +28,32 @@
 .row-no-wrap       { @include row-wraps(); }
 .row-is-vertical   { @include row-is-vertical(); }
 .row-is-v-centered { @include row-is-v-centered(); }
+.row-is-right      { @include row-is-right(); }
 
-// not small query
+@include not-small ()  {
   .ns-row               { @include row(); }
   .ns-row-is-centered   { @include row-is-centered(); }
   .ns-row-is-flush      { @include row-is-flush(); }
   .ns-row-no-wrap       { @include row-wraps(); }
   .ns-row-is-vertical   { @include row-is-vertical(); }
   .ns-row-is-v-centered { @include row-is-v-centered(); }
-// medium query
+  .ns-row-is-right      { @include row-is-right(); }
+}
+@include medium-break ()  {
   .md-row               { @include row(); }
   .md-row-is-centered   { @include row-is-centered(); }
   .md-row-is-flush      { @include row-is-flush(); }
   .md-row-no-wrap       { @include row-wraps(); }
   .md-row-is-vertical   { @include row-is-vertical(); }
   .md-row-is-v-centered { @include row-is-v-centered(); }
-// large query
+  .md-row-is-right      { @include row-is-right(); }
+}
+@include large-break ()  {
   .lg-row               { @include row(); }
   .lg-row-is-centered   { @include row-is-centered(); }
   .lg-row-is-flush      { @include row-is-flush(); }
   .lg-row-no-wrap       { @include row-wraps(); }
   .lg-row-is-vertical   { @include row-is-vertical(); }
   .lg-row-is-v-centered { @include row-is-v-centered(); }
+  .lg-row-is-right.      { @include row-is-right(); }
+}

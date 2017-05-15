@@ -1,9 +1,19 @@
-@mixin container {
-  width: $container-ratio * 100%;
+@mixin container($ratio) {
+  width: $ratio * 100%;
   max-width: $max-width;
   margin: auto;
 }
 
 .container {
-  @include container();
+  @include container($container-ratio);
+}
+@include medium-break ()  {
+  .container {
+    @include container($container-ratio-medium);
+  }
+}
+@include large-break ()   {
+  .container {
+    @include container($container-ratio-large);
+  }
 }

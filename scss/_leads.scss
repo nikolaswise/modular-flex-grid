@@ -1,0 +1,38 @@
+@mixin lead-top ($n) {
+  margin-top: $n * $leading;
+}
+@mixin lead-bottom ($n) {
+  margin-bottom: $n * $leading;
+}
+
+@for $i from 0 through 12 {
+  .lead-#{$i} { @include lead-top($i); }
+}
+@for $i from 0 through 12 {
+  .lead-bottom-#{$i} { @include lead-bottom($i); }
+}
+
+@include not-small ()    {
+  @for $i from 0 through 12 {
+    .ns-lead-#{$i} { @include lead-top($i); }
+  }
+  @for $i from 0 through 12 {
+    .ns-lead-bottom-#{$i} { @include lead-bottom($i); }
+  }
+}
+@include medium-break () {
+  @for $i from 0 through 12 {
+    .md-lead-#{$i} { @include lead-top($i); }
+  }
+  @for $i from 0 through 12 {
+    .md-lead-bottom-#{$i} { @include lead-bottom($i); }
+  }
+}
+@include large-break ()  {
+  @for $i from 0 through 12 {
+    .lg-lead-#{$i} { @include lead-top($i); }
+  }
+  @for $i from 0 through 12 {
+    .lg-lead-bottom-#{$i} { @include lead-bottom($i); }
+  }
+}
