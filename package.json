@@ -4,24 +4,24 @@
   "description": "CSS and SASS modular mini framework for creating typographic systems",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/modular-.scss css/modular-.css",
-    "postbuild": "postcss css/modular-.css --use autoprefixer -d css/",
-    "minify": "postcss css/modular-.css --use cssnano -o css/modular-.min.css",
-    "stats": "cssstats css/modular-.css  ./css-stats.json",
+    "build": "node-sass scss/modular-flex-grid.scss css/modular-flex-grid.css",
+    "postbuild": "postcss css/modular-flex-grid.css --use autoprefixer -d css/",
+    "minify": "postcss css/modular-flex-grid.css --use cssnano -o css/modular-flex-grid.min.css",
+    "stats": "cssstats css/modular-flex-grid.css  ./css-stats.json",
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nikolaswise/modular-.git"
+    "url": "git+https://github.com/nikolaswise/modular-flex-grid.git"
   },
   "keywords": [
   ],
   "author": "Nikolas Wise",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nikolaswise/modular-/issues"
+    "url": "https://github.com/nikolaswise/modular-flex-grid/issues"
   },
-  "homepage": "https://github.com/nikolaswise/modular-#readme",
+  "homepage": "https://github.com/nikolaswise/modular-flex-grid#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.0",
     "cssnano": "^3.10.0",

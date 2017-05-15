@@ -1,0 +1,19 @@
+// Correlated with column break points
+$gutter:    4%;
+$col-count: 12;
+
+$break-small:  600px;
+$break-medium: 1200px;
+$break-large:  1600px;
+
+$spacing: (
+  padding-x: $gutter,
+  padding-y: $baseline,
+  padding-outer-x: $gutter / 2,
+  padding-outer-y: $baseline
+);
+
+$padding-x: map-get($spacing, padding-x);
+$padding-y: map-get($spacing, padding-y);
+$padding-outer-x: map-get($spacing, padding-outer-x);
+$padding-outer-y: map-get($spacing, padding-outer-y);

@@ -1,0 +1,49 @@
+@mixin row () {
+  justify-content: left;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: top;
+  display: flex;
+  padding: 0 0;
+}
+@mixin row-is-centered () {
+  justify-content: center;
+}
+@mixin row-is-vertical () {
+  flex-direction: column;
+}
+@mixin row-no-wrap () {
+  flex-wrap: none;
+}
+@mixin row-is-v-centered () {
+  align-items: center
+}
+
+.row               { @include row(); }
+.row-is-centered   { @include row-is-centered(); }
+.row-is-flush      { @include row-is-flush(); }
+.row-no-wrap       { @include row-wraps(); }
+.row-is-vertical   { @include row-is-vertical(); }
+.row-is-v-centered { @include row-is-v-centered(); }
+
+// not small query
+  .ns-row               { @include row(); }
+  .ns-row-is-centered   { @include row-is-centered(); }
+  .ns-row-is-flush      { @include row-is-flush(); }
+  .ns-row-no-wrap       { @include row-wraps(); }
+  .ns-row-is-vertical   { @include row-is-vertical(); }
+  .ns-row-is-v-centered { @include row-is-v-centered(); }
+// medium query
+  .md-row               { @include row(); }
+  .md-row-is-centered   { @include row-is-centered(); }
+  .md-row-is-flush      { @include row-is-flush(); }
+  .md-row-no-wrap       { @include row-wraps(); }
+  .md-row-is-vertical   { @include row-is-vertical(); }
+  .md-row-is-v-centered { @include row-is-v-centered(); }
+// large query
+  .lg-row               { @include row(); }
+  .lg-row-is-centered   { @include row-is-centered(); }
+  .lg-row-is-flush      { @include row-is-flush(); }
+  .lg-row-no-wrap       { @include row-wraps(); }
+  .lg-row-is-vertical   { @include row-is-vertical(); }
+  .lg-row-is-v-centered { @include row-is-v-centered(); }
