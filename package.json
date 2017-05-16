@@ -1,6 +1,6 @@
 {
-  "name": "modular-type",
-  "version": "1.0.0",
+  "name": "modular-flex-grid",
+  "version": "0.0.1",
   "description": "CSS and SASS modular mini framework for creating typographic systems",
   "main": "index.js",
   "scripts": {
