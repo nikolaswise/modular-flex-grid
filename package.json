@@ -4,7 +4,7 @@
   "description": "CSS and SASS modular mini framework for creating typographic systems",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/modular-flex-grid.scss css/modular-flex-grid.css",
+    "build": "node-sass scss/modular-flex-grid.scss css/modular-flex-grid.css --include-path=node_modules",
     "postbuild": "postcss css/modular-flex-grid.css --use autoprefixer -d css/",
     "minify": "postcss css/modular-flex-grid.css --use cssnano -o css/modular-flex-grid.min.css",
     "stats": "cssstats css/modular-flex-grid.css  ./css-stats.json",
@@ -14,8 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/nikolaswise/modular-flex-grid.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Nikolas Wise",
   "license": "ISC",
   "bugs": {
@@ -26,6 +25,7 @@
     "autoprefixer": "^7.1.0",
     "cssnano": "^3.10.0",
     "cssstats-cli": "^1.0.0-beta.2",
+    "modular-media-queries": "github:nikolaswise/modular-media-queries",
     "node-sass": "^4.5.2",
     "postcss-cli": "^4.0.0",
     "sass-lint": "^1.10.2"

@@ -1,21 +1,5 @@
-// This should be a diff module at some point
-@mixin not-small {
-  @media ( min-width: 30rem ) {
-    @content;
-  }
-}
-@mixin medium-break {
-  @media (min-width: 30rem) and (max-width: 60rem) {
-    @content;
-  }
-}
-@mixin large-break {
-  @media (min-width: 60rem) {
-    @content;
-  }
-}
-
 @import "config";
+@import "modular-media-queries/media-queries";
 @import "container";
 @import "row";
 @import "columns";
